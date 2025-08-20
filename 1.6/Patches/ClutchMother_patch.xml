@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Feralisk Clutchmother -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AA_FeraliskClutchMother"]/race/manhunterOnTameFailChance</xpath>
+        <value>
+          <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+        </value>
+      </li>
+
+      <!-- StatBases -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AA_FeraliskClutchMother"]/statBases</xpath>
+        <value>
+          <statBases>
+            <FilthRate>8</FilthRate>
+            <Wildness>0.99</Wildness>
+          </statBases>
+        </value>
+      </li>
+
+        <li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="AA_FeraliskClutchMother"]/comps/li[@Class="VEF.AnimalBehaviours.CompProperties_Untameable"]</xpath>
+        </li>
+
+    </operations>
+  </Operation>
+
+    <!-- Blizzarisk Clutchmother -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AA_BlizzariskClutchMother"]/race/manhunterOnTameFailChance</xpath>
+        <value>
+          <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+        </value>
+      </li>
+
+      <!-- StatBases -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AA_BlizzariskClutchMother"]/statBases</xpath>
+        <value>
+          <statBases>
+            <FilthRate>8</FilthRate>
+            <Wildness>0.99</Wildness>
+          </statBases>
+        </value>
+      </li>
+
+        <li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="AA_BlizzariskClutchMother"]/comps/li[@Class="VEF.AnimalBehaviours.CompProperties_Untameable"]</xpath>
+        </li>
+
+    </operations>
+  </Operation>
+
+  <!-- Dunealisk Clutchmother -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AA_DunealiskClutchMother"]/race/manhunterOnTameFailChance</xpath>
+        <value>
+          <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+        </value>
+      </li>
+
+      <!-- StatBases -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AA_DunealiskClutchMother"]/statBases</xpath>
+        <value>
+          <statBases>
+            <FilthRate>8</FilthRate>
+            <Wildness>0.99</Wildness>
+          </statBases>
+        </value>
+      </li>
+
+        <li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="AA_DunealiskClutchMother"]/comps/li[@Class="VEF.AnimalBehaviours.CompProperties_Untameable"]</xpath>
+        </li>
+
+    </operations>
+  </Operation>
+</Patch>
